@@ -11,3 +11,6 @@ package-install:
 	uv tool install dist/*.whl
 
 .PHONY: install  build
+
+lint:
+	uv run ruff check brain_games
